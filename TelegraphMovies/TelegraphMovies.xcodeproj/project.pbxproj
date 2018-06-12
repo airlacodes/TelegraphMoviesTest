@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CD68ABF20D0733000ECE46D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68ABE20D0733000ECE46D /* AppDelegate.swift */; };
+		5CD68AC420D0733000ECE46D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC220D0733000ECE46D /* Main.storyboard */; };
+		5CD68AC620D0733000ECE46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC520D0733000ECE46D /* Assets.xcassets */; };
+		5CD68AC920D0733000ECE46D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC720D0733000ECE46D /* LaunchScreen.storyboard */; };
+		5CD68AD420D0733000ECE46D /* TelegraphMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AD320D0733000ECE46D /* TelegraphMoviesTests.swift */; };
+		5CD68AE220D073D900ECE46D /* ArticleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AE120D073D900ECE46D /* ArticleCollectionViewController.swift */; };
+		5CD68AE420D0745E00ECE46D /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AE320D0745E00ECE46D /* ArticleCollectionViewCell.swift */; };
+		5CD68AE620D0752300ECE46D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AE520D0752300ECE46D /* Article.swift */; };
+		5CD68AE820D0765200ECE46D /* ArticleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AE720D0765200ECE46D /* ArticleInteractor.swift */; };
+		5CD68AEA20D0776C00ECE46D /* HttpCient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AE920D0776C00ECE46D /* HttpCient.swift */; };
+		5CD68AEC20D07A8600ECE46D /* TelegraphArticleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AEB20D07A8600ECE46D /* TelegraphArticleListPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CD68AD020D0733000ECE46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CD68AB320D0733000ECE46D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CD68ABA20D0733000ECE46D;
+			remoteInfo = TelegraphMovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CD68ABB20D0733000ECE46D /* TelegraphMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegraphMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD68ABE20D0733000ECE46D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CD68AC320D0733000ECE46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CD68AC520D0733000ECE46D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CD68AC820D0733000ECE46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CD68ACA20D0733000ECE46D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD68ACF20D0733000ECE46D /* TelegraphMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegraphMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD68AD320D0733000ECE46D /* TelegraphMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphMoviesTests.swift; sourceTree = "<group>"; };
+		5CD68AD520D0733000ECE46D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD68AE120D073D900ECE46D /* ArticleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewController.swift; sourceTree = "<group>"; };
+		5CD68AE320D0745E00ECE46D /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArticleCollectionViewCell.swift; path = View/ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
+		5CD68AE520D0752300ECE46D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		5CD68AE720D0765200ECE46D /* ArticleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleInteractor.swift; sourceTree = "<group>"; };
+		5CD68AE920D0776C00ECE46D /* HttpCient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCient.swift; sourceTree = "<group>"; };
+		5CD68AEB20D07A8600ECE46D /* TelegraphArticleListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphArticleListPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CD68AB820D0733000ECE46D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD68ACC20D0733000ECE46D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CD68AB220D0733000ECE46D = {
+			isa = PBXGroup;
+			children = (
+				5CD68ABD20D0733000ECE46D /* TelegraphMovies */,
+				5CD68AD220D0733000ECE46D /* TelegraphMoviesTests */,
+				5CD68ABC20D0733000ECE46D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CD68ABC20D0733000ECE46D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CD68ABB20D0733000ECE46D /* TelegraphMovies.app */,
+				5CD68ACF20D0733000ECE46D /* TelegraphMoviesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CD68ABD20D0733000ECE46D /* TelegraphMovies */ = {
+			isa = PBXGroup;
+			children = (
+				5CD68ABE20D0733000ECE46D /* AppDelegate.swift */,
+				5CD68AE120D073D900ECE46D /* ArticleCollectionViewController.swift */,
+				5CD68AEB20D07A8600ECE46D /* TelegraphArticleListPresenter.swift */,
+				5CD68AE520D0752300ECE46D /* Article.swift */,
+				5CD68AE320D0745E00ECE46D /* ArticleCollectionViewCell.swift */,
+				5CD68ADE20D0735200ECE46D /* Networking */,
+				5CD68AC220D0733000ECE46D /* Main.storyboard */,
+				5CD68AC520D0733000ECE46D /* Assets.xcassets */,
+				5CD68AC720D0733000ECE46D /* LaunchScreen.storyboard */,
+				5CD68ACA20D0733000ECE46D /* Info.plist */,
+			);
+			path = TelegraphMovies;
+			sourceTree = "<group>";
+		};
+		5CD68AD220D0733000ECE46D /* TelegraphMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CD68AD320D0733000ECE46D /* TelegraphMoviesTests.swift */,
+				5CD68AD520D0733000ECE46D /* Info.plist */,
+			);
+			path = TelegraphMoviesTests;
+			sourceTree = "<group>";
+		};
+		5CD68ADE20D0735200ECE46D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5CD68AE720D0765200ECE46D /* ArticleInteractor.swift */,
+				5CD68AE920D0776C00ECE46D /* HttpCient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CD68ABA20D0733000ECE46D /* TelegraphMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CD68AD820D0733000ECE46D /* Build configuration list for PBXNativeTarget "TelegraphMovies" */;
+			buildPhases = (
+				5CD68AB720D0733000ECE46D /* Sources */,
+				5CD68AB820D0733000ECE46D /* Frameworks */,
+				5CD68AB920D0733000ECE46D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelegraphMovies;
+			productName = TelegraphMovies;
+			productReference = 5CD68ABB20D0733000ECE46D /* TelegraphMovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CD68ACE20D0733000ECE46D /* TelegraphMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CD68ADB20D0733000ECE46D /* Build configuration list for PBXNativeTarget "TelegraphMoviesTests" */;
+			buildPhases = (
+				5CD68ACB20D0733000ECE46D /* Sources */,
+				5CD68ACC20D0733000ECE46D /* Frameworks */,
+				5CD68ACD20D0733000ECE46D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CD68AD120D0733000ECE46D /* PBXTargetDependency */,
+			);
+			name = TelegraphMoviesTests;
+			productName = TelegraphMoviesTests;
+			productReference = 5CD68ACF20D0733000ECE46D /* TelegraphMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CD68AB320D0733000ECE46D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Airla Tech Ltd";
+				TargetAttributes = {
+					5CD68ABA20D0733000ECE46D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5CD68ACE20D0733000ECE46D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5CD68ABA20D0733000ECE46D;
+					};
+				};
+			};
+			buildConfigurationList = 5CD68AB620D0733000ECE46D /* Build configuration list for PBXProject "TelegraphMovies" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CD68AB220D0733000ECE46D;
+			productRefGroup = 5CD68ABC20D0733000ECE46D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CD68ABA20D0733000ECE46D /* TelegraphMovies */,
+				5CD68ACE20D0733000ECE46D /* TelegraphMoviesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CD68AB920D0733000ECE46D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD68AC920D0733000ECE46D /* LaunchScreen.storyboard in Resources */,
+				5CD68AC620D0733000ECE46D /* Assets.xcassets in Resources */,
+				5CD68AC420D0733000ECE46D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD68ACD20D0733000ECE46D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CD68AB720D0733000ECE46D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD68AE620D0752300ECE46D /* Article.swift in Sources */,
+				5CD68AE420D0745E00ECE46D /* ArticleCollectionViewCell.swift in Sources */,
+				5CD68ABF20D0733000ECE46D /* AppDelegate.swift in Sources */,
+				5CD68AE820D0765200ECE46D /* ArticleInteractor.swift in Sources */,
+				5CD68AE220D073D900ECE46D /* ArticleCollectionViewController.swift in Sources */,
+				5CD68AEC20D07A8600ECE46D /* TelegraphArticleListPresenter.swift in Sources */,
+				5CD68AEA20D0776C00ECE46D /* HttpCient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD68ACB20D0733000ECE46D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD68AD420D0733000ECE46D /* TelegraphMoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CD68AD120D0733000ECE46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CD68ABA20D0733000ECE46D /* TelegraphMovies */;
+			targetProxy = 5CD68AD020D0733000ECE46D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CD68AC220D0733000ECE46D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CD68AC320D0733000ECE46D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CD68AC720D0733000ECE46D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CD68AC820D0733000ECE46D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CD68AD620D0733000ECE46D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CD68AD720D0733000ECE46D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CD68AD920D0733000ECE46D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMMMB6AZNA;
+				INFOPLIST_FILE = TelegraphMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.airlatech.TelegraphMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CD68ADA20D0733000ECE46D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMMMB6AZNA;
+				INFOPLIST_FILE = TelegraphMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.airlatech.TelegraphMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CD68ADC20D0733000ECE46D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMMMB6AZNA;
+				INFOPLIST_FILE = TelegraphMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.airlatech.TelegraphMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelegraphMovies.app/TelegraphMovies";
+			};
+			name = Debug;
+		};
+		5CD68ADD20D0733000ECE46D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMMMB6AZNA;
+				INFOPLIST_FILE = TelegraphMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.airlatech.TelegraphMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelegraphMovies.app/TelegraphMovies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CD68AB620D0733000ECE46D /* Build configuration list for PBXProject "TelegraphMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD68AD620D0733000ECE46D /* Debug */,
+				5CD68AD720D0733000ECE46D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CD68AD820D0733000ECE46D /* Build configuration list for PBXNativeTarget "TelegraphMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD68AD920D0733000ECE46D /* Debug */,
+				5CD68ADA20D0733000ECE46D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CD68ADB20D0733000ECE46D /* Build configuration list for PBXNativeTarget "TelegraphMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD68ADC20D0733000ECE46D /* Debug */,
+				5CD68ADD20D0733000ECE46D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CD68AB320D0733000ECE46D /* Project object */;
+}
