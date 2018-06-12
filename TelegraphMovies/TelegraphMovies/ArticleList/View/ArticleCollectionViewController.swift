@@ -9,11 +9,6 @@
 import Foundation
 import UIKit
 
-protocol ArticleListView {
-    func set(articles: [Article])
-    func set(presenter: ArticleListPresenter)
-}
-
 final class ArticleCollectionViewController: UICollectionViewController, ArticleListView {
 
     private var articles: [Article]?
@@ -33,12 +28,15 @@ final class ArticleCollectionViewController: UICollectionViewController, Article
         self.presenter = presenter
     }
 
+    func show(error: Error) {
+        print(error.localizedDescription)
+    }
+
     func numberOfItems(inSection section: Int) -> Int {
         return articles?.count ?? 0
     }
 
     func cellForItem(at indexPath: IndexPath) -> UICollectionViewCell? {
-
         let cell = self.collectionView?.dequeueReusableCell(withReuseIdentifier: "ArticleCollectionViewCell",
                                                             for: indexPath) as! ArticleCollectionViewCell
 

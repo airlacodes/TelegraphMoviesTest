@@ -8,13 +8,6 @@
 
 import Foundation
 
-protocol ArticleListPresenter {
-
-    func set(view: ArticleListView)
-
-    func viewAppeared()
-}
-
 final class TelegraphArticleListPresenter: ArticleListPresenter {
 
     private let articleListInteractor: ArticleListInteractor
@@ -29,8 +22,13 @@ final class TelegraphArticleListPresenter: ArticleListPresenter {
     }
 
     func viewAppeared() {
-        articleListInteractor.getArticleList(callback: { [weak self] articles in
-            self?.view?.set(articles: articles)
+        articleListInteractor.getArticleList(callback: { [weak self] (result) in
+            switch result {
+            case .success(let articles):
+                self?.view?.set(articles: articles)
+            case .failure(let error):
+                self?.view?.show(error: error)
+            }
         })
     }
 }

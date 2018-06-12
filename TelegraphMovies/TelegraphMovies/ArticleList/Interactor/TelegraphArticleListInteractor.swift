@@ -1,5 +1,5 @@
 //
-//  ArticleInteractor.swift
+//  TelegraphArticleListInteractor.swift
 //  TelegraphMovies
 //
 //  Created by Jeevan Thandi on 12/06/2018.
@@ -8,16 +8,11 @@
 
 import Foundation
 
-protocol ArticleListInteractor {
-    func getArticleList(callback: @escaping ([Article]) -> Void)
-}
-
 final class TelegraphArticleListInteractor: ArticleListInteractor {
 
-    private var callback: (([Article]) -> Void)?
+    private var callback: ((Result<[Article]>) -> Void)?
 
-
-    func getArticleList(callback: @escaping ([Article]) -> Void) {
+    func getArticleList(callback: @escaping (Result<[Article]>) -> Void) {
         self.callback = callback
     }
 }
