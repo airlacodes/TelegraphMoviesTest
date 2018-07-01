@@ -11,7 +11,6 @@ import Foundation
 enum APIEndpoint {
     case movieReviewArticles
 
-
     var path: String {
         switch self {
         case .movieReviewArticles:
@@ -19,10 +18,3 @@ enum APIEndpoint {
         }
     }
 }
-
-extension String {
-    func asUrl() -> URL {
-        return URL(string: self)!
-    }
-}
-

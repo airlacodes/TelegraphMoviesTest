@@ -15,6 +15,7 @@
 		5C08DFC220E7FC5B002203CB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFC120E7FC5B002203CB /* APIError.swift */; };
 		5C08DFC420E7FCC3002203CB /* Data+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFC320E7FCC3002203CB /* Data+Decode.swift */; };
 		5C08DFC620E7FE1E002203CB /* ArticleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFC520E7FE1E002203CB /* ArticleCollection.swift */; };
+		5C08DFC920E8E41D002203CB /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFC820E8E41D002203CB /* String+URL.swift */; };
 		5CD68ABF20D0733000ECE46D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68ABE20D0733000ECE46D /* AppDelegate.swift */; };
 		5CD68AC420D0733000ECE46D /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC220D0733000ECE46D /* ArticleList.storyboard */; };
 		5CD68AC620D0733000ECE46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC520D0733000ECE46D /* Assets.xcassets */; };
@@ -22,7 +23,7 @@
 		5CD68AE220D073D900ECE46D /* ArticleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AE120D073D900ECE46D /* ArticleCollectionViewController.swift */; };
 		5CD68AE620D0752300ECE46D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AE520D0752300ECE46D /* Article.swift */; };
 		5CD68AE820D0765200ECE46D /* ArticleListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AE720D0765200ECE46D /* ArticleListInteractor.swift */; };
-		5CD68AEA20D0776C00ECE46D /* HttpCient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AE920D0776C00ECE46D /* HttpCient.swift */; };
+		5CD68AEA20D0776C00ECE46D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AE920D0776C00ECE46D /* Result.swift */; };
 		5CD68AEC20D07A8600ECE46D /* TelegraphArticleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AEB20D07A8600ECE46D /* TelegraphArticleListPresenter.swift */; };
 		5CD68AEF20D0829F00ECE46D /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AEE20D0829F00ECE46D /* ArticleCollectionViewCell.swift */; };
 		5CD68AF820D0834200ECE46D /* TelegraphArticleListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AF720D0834200ECE46D /* TelegraphArticleListInteractor.swift */; };
@@ -54,6 +55,7 @@
 		5C08DFC120E7FC5B002203CB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		5C08DFC320E7FCC3002203CB /* Data+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Decode.swift"; sourceTree = "<group>"; };
 		5C08DFC520E7FE1E002203CB /* ArticleCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollection.swift; sourceTree = "<group>"; };
+		5C08DFC820E8E41D002203CB /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
 		5CD68ABB20D0733000ECE46D /* TelegraphMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegraphMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD68ABE20D0733000ECE46D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CD68AC320D0733000ECE46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ArticleList.storyboard; sourceTree = "<group>"; };
@@ -65,7 +67,7 @@
 		5CD68AE120D073D900ECE46D /* ArticleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewController.swift; sourceTree = "<group>"; };
 		5CD68AE520D0752300ECE46D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		5CD68AE720D0765200ECE46D /* ArticleListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListInteractor.swift; sourceTree = "<group>"; };
-		5CD68AE920D0776C00ECE46D /* HttpCient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCient.swift; sourceTree = "<group>"; };
+		5CD68AE920D0776C00ECE46D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		5CD68AEB20D07A8600ECE46D /* TelegraphArticleListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphArticleListPresenter.swift; sourceTree = "<group>"; };
 		5CD68AEE20D0829F00ECE46D /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
 		5CD68AF720D0834200ECE46D /* TelegraphArticleListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphArticleListInteractor.swift; sourceTree = "<group>"; };
@@ -105,6 +107,16 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		5C08DFC720E8E34C002203CB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5C08DFC320E7FCC3002203CB /* Data+Decode.swift */,
+				5C08DFC820E8E41D002203CB /* String+URL.swift */,
+				5CD68AE920D0776C00ECE46D /* Result.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		5CD68AB220D0733000ECE46D = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +138,7 @@
 		5CD68ABD20D0733000ECE46D /* TelegraphMovies */ = {
 			isa = PBXGroup;
 			children = (
+				5C08DFC720E8E34C002203CB /* Util */,
 				5CD68ABE20D0733000ECE46D /* AppDelegate.swift */,
 				5C08DFB620E7F278002203CB /* MainFlow.swift */,
 				5C08DFB820E7F2F0002203CB /* ScreenFactory.swift */,
@@ -154,9 +167,7 @@
 			children = (
 				5C08DFBA20E7F4F4002203CB /* Request */,
 				5CD68AF620D0830300ECE46D /* Model */,
-				5CD68AE920D0776C00ECE46D /* HttpCient.swift */,
 				5C08DFBD20E7F52F002203CB /* APIEndpoint.swift */,
-				5C08DFC320E7FCC3002203CB /* Data+Decode.swift */,
 				5C08DFC120E7FC5B002203CB /* APIError.swift */,
 			);
 			path = Networking;
@@ -398,7 +409,8 @@
 				5C08DFBE20E7F52F002203CB /* APIEndpoint.swift in Sources */,
 				5CD68AEC20D07A8600ECE46D /* TelegraphArticleListPresenter.swift in Sources */,
 				5C08DFBC20E7F502002203CB /* RequestSender.swift in Sources */,
-				5CD68AEA20D0776C00ECE46D /* HttpCient.swift in Sources */,
+				5C08DFC920E8E41D002203CB /* String+URL.swift in Sources */,
+				5CD68AEA20D0776C00ECE46D /* Result.swift in Sources */,
 				5C08DFB720E7F278002203CB /* MainFlow.swift in Sources */,
 				5C08DFC620E7FE1E002203CB /* ArticleCollection.swift in Sources */,
 				5C08DFC420E7FCC3002203CB /* Data+Decode.swift in Sources */,

@@ -22,7 +22,6 @@ final class ArticleCollectionViewController: UICollectionViewController, Article
 
         self.collectionView?.register(ArticleCollectionViewCell.self, forCellWithReuseIdentifier: cellReuseIdentifier)
 
-
         presenter?.viewAppeared()
     }
 

@@ -1,5 +1,5 @@
 //
-//  HttpCient.swift
+//  Result.swift
 //  TelegraphMovies
 //
 //  Created by Jeevan Thandi on 12/06/2018.
