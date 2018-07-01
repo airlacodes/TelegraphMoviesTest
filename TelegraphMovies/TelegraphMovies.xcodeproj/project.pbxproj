@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C08DFB720E7F278002203CB /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFB620E7F278002203CB /* MainFlow.swift */; };
+		5C08DFB920E7F2F0002203CB /* ScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFB820E7F2F0002203CB /* ScreenFactory.swift */; };
+		5C08DFBC20E7F502002203CB /* RequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFBB20E7F502002203CB /* RequestSender.swift */; };
+		5C08DFBE20E7F52F002203CB /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFBD20E7F52F002203CB /* APIEndpoint.swift */; };
+		5C08DFC020E7F73B002203CB /* TelegraphRequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFBF20E7F73B002203CB /* TelegraphRequestSender.swift */; };
+		5C08DFC220E7FC5B002203CB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFC120E7FC5B002203CB /* APIError.swift */; };
+		5C08DFC420E7FCC3002203CB /* Data+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFC320E7FCC3002203CB /* Data+Decode.swift */; };
+		5C08DFC620E7FE1E002203CB /* ArticleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08DFC520E7FE1E002203CB /* ArticleCollection.swift */; };
 		5CD68ABF20D0733000ECE46D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68ABE20D0733000ECE46D /* AppDelegate.swift */; };
-		5CD68AC420D0733000ECE46D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC220D0733000ECE46D /* Main.storyboard */; };
+		5CD68AC420D0733000ECE46D /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC220D0733000ECE46D /* ArticleList.storyboard */; };
 		5CD68AC620D0733000ECE46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC520D0733000ECE46D /* Assets.xcassets */; };
 		5CD68AC920D0733000ECE46D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC720D0733000ECE46D /* LaunchScreen.storyboard */; };
 		5CD68AE220D073D900ECE46D /* ArticleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68AE120D073D900ECE46D /* ArticleCollectionViewController.swift */; };
@@ -38,9 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C08DFB620E7F278002203CB /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
+		5C08DFB820E7F2F0002203CB /* ScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFactory.swift; sourceTree = "<group>"; };
+		5C08DFBB20E7F502002203CB /* RequestSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSender.swift; sourceTree = "<group>"; };
+		5C08DFBD20E7F52F002203CB /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		5C08DFBF20E7F73B002203CB /* TelegraphRequestSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphRequestSender.swift; sourceTree = "<group>"; };
+		5C08DFC120E7FC5B002203CB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		5C08DFC320E7FCC3002203CB /* Data+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Decode.swift"; sourceTree = "<group>"; };
+		5C08DFC520E7FE1E002203CB /* ArticleCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollection.swift; sourceTree = "<group>"; };
 		5CD68ABB20D0733000ECE46D /* TelegraphMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegraphMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD68ABE20D0733000ECE46D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5CD68AC320D0733000ECE46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CD68AC320D0733000ECE46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ArticleList.storyboard; sourceTree = "<group>"; };
 		5CD68AC520D0733000ECE46D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CD68AC820D0733000ECE46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CD68ACA20D0733000ECE46D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C08DFBA20E7F4F4002203CB /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				5C08DFBB20E7F502002203CB /* RequestSender.swift */,
+				5C08DFBF20E7F73B002203CB /* TelegraphRequestSender.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		5CD68AB220D0733000ECE46D = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +127,11 @@
 			isa = PBXGroup;
 			children = (
 				5CD68ABE20D0733000ECE46D /* AppDelegate.swift */,
+				5C08DFB620E7F278002203CB /* MainFlow.swift */,
+				5C08DFB820E7F2F0002203CB /* ScreenFactory.swift */,
 				5CD68AF120D082AD00ECE46D /* ArticleList */,
 				5CD68ADE20D0735200ECE46D /* Networking */,
-				5CD68AC220D0733000ECE46D /* Main.storyboard */,
+				5CD68AC220D0733000ECE46D /* ArticleList.storyboard */,
 				5CD68AC520D0733000ECE46D /* Assets.xcassets */,
 				5CD68AC720D0733000ECE46D /* LaunchScreen.storyboard */,
 				5CD68ACA20D0733000ECE46D /* Info.plist */,
@@ -125,8 +152,12 @@
 		5CD68ADE20D0735200ECE46D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				5C08DFBA20E7F4F4002203CB /* Request */,
 				5CD68AF620D0830300ECE46D /* Model */,
 				5CD68AE920D0776C00ECE46D /* HttpCient.swift */,
+				5C08DFBD20E7F52F002203CB /* APIEndpoint.swift */,
+				5C08DFC320E7FCC3002203CB /* Data+Decode.swift */,
+				5C08DFC120E7FC5B002203CB /* APIError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -173,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				5CD68AE520D0752300ECE46D /* Article.swift */,
+				5C08DFC520E7FE1E002203CB /* ArticleCollection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -338,7 +370,7 @@
 			files = (
 				5CD68AC920D0733000ECE46D /* LaunchScreen.storyboard in Resources */,
 				5CD68AC620D0733000ECE46D /* Assets.xcassets in Resources */,
-				5CD68AC420D0733000ECE46D /* Main.storyboard in Resources */,
+				5CD68AC420D0733000ECE46D /* ArticleList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,13 +390,21 @@
 			files = (
 				5CD68AFA20D0835B00ECE46D /* ArticleListPresenter.swift in Sources */,
 				5CD68AFC20D0839C00ECE46D /* ArticleListView.swift in Sources */,
+				5C08DFB920E7F2F0002203CB /* ScreenFactory.swift in Sources */,
 				5CD68AE620D0752300ECE46D /* Article.swift in Sources */,
 				5CD68ABF20D0733000ECE46D /* AppDelegate.swift in Sources */,
 				5CD68AE820D0765200ECE46D /* ArticleListInteractor.swift in Sources */,
 				5CD68AE220D073D900ECE46D /* ArticleCollectionViewController.swift in Sources */,
+				5C08DFBE20E7F52F002203CB /* APIEndpoint.swift in Sources */,
 				5CD68AEC20D07A8600ECE46D /* TelegraphArticleListPresenter.swift in Sources */,
+				5C08DFBC20E7F502002203CB /* RequestSender.swift in Sources */,
 				5CD68AEA20D0776C00ECE46D /* HttpCient.swift in Sources */,
+				5C08DFB720E7F278002203CB /* MainFlow.swift in Sources */,
+				5C08DFC620E7FE1E002203CB /* ArticleCollection.swift in Sources */,
+				5C08DFC420E7FCC3002203CB /* Data+Decode.swift in Sources */,
 				5CD68AF820D0834200ECE46D /* TelegraphArticleListInteractor.swift in Sources */,
+				5C08DFC220E7FC5B002203CB /* APIError.swift in Sources */,
+				5C08DFC020E7F73B002203CB /* TelegraphRequestSender.swift in Sources */,
 				5CD68AEF20D0829F00ECE46D /* ArticleCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,12 +432,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5CD68AC220D0733000ECE46D /* Main.storyboard */ = {
+		5CD68AC220D0733000ECE46D /* ArticleList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5CD68AC320D0733000ECE46D /* Base */,
 			);
-			name = Main.storyboard;
+			name = ArticleList.storyboard;
 			sourceTree = "<group>";
 		};
 		5CD68AC720D0733000ECE46D /* LaunchScreen.storyboard */ = {
