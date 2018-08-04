@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ArticleCollection: Codable {
+struct ArticleCollection: Decodable {
 
     let collection: [Article]
 

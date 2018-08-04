@@ -8,14 +8,25 @@
 
 import Foundation
 
-struct Article: Codable {
+struct Article: Decodable {
 
-    let headline: String?
+    let headline: String
+    let description: String
+    let pictureUrl: String
 
     enum CodingKeys: String, CodingKey {
         case headline = "headline"
+        case description = "description"
+        case pictureUrl = "picture-url"
     }
 
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        self.headline = (try? container.decode(String.self, forKey: .headline)) ?? ""
+        self.description = (try? container.decode(String.self, forKey: .description)) ?? ""
+        self.pictureUrl = (try? container.decode(String.self, forKey: .pictureUrl)) ?? ""
+    }
 }
 
 /**
