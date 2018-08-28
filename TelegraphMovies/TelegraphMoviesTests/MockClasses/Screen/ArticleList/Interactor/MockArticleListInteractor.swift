@@ -12,5 +12,8 @@ import Foundation
 
 final class MockArticleListInteractor: ArticleListInteractor {
 
-    func getArticleList(callback: @escaping (Result<[Article]>) -> Void) {}
+    private(set) var getArticleListCalled = false
+    func getArticleList(callback: @escaping (Result<[Article]>) -> Void) {
+        getArticleListCalled = true
+    }
 }

@@ -27,5 +27,4 @@ final class MainFlow: MainFlowProtocol {
     func start() {
         window.rootViewController = screenFactory.createArticleList()
     }
-
 }
