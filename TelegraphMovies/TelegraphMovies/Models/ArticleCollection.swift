@@ -16,7 +16,7 @@ struct ArticleCollection: CodableModel {
         case collection = "collection"
     }
 
-    init(collection: [Article] = [Article()]) {
+    init(collection: [Article] = []) {
         self.collection = collection
     }
 

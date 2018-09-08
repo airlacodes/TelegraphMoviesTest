@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        guard notRunningTests() else {
+            return false
+        }
 
         guard let window = self.window else {
             fatalError("Nil UIWindow")
@@ -25,5 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mainFlow.start()
 
         return true
+    }
+}
+
+extension AppDelegate {
+    fileprivate func notRunningTests() -> Bool {
+        return NSClassFromString("XCTestCase") == nil
     }
 }
