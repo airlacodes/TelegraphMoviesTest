@@ -9,7 +9,7 @@
 import Foundation
 
 protocol RequestSender {
-    func request(endpoint: APIEndpoint, callback: @escaping (Result<Data>) -> Void)
+    func request(endpoint: APIEndpoint, callback: @escaping CallbackResult<Data>)
 }
 
 

@@ -16,7 +16,7 @@ final class TelegraphRequestSender: RequestSender {
         self.urlSession = urlSession
     }
 
-    func request(endpoint: APIEndpoint, callback: @escaping (Result<Data>) -> Void) {
+    func request(endpoint: APIEndpoint, callback: @escaping CallbackResult<Data>) {
         let task = urlSession.dataTask(with: endpoint.path.asUrl(),
                                        completionHandler: { (data, response, error) in
                                         if let error = error {

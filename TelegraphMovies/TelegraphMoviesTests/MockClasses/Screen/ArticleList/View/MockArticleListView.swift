@@ -14,7 +14,13 @@ final class MockArticleListView: ArticleListView {
 
     func set(presenter: ArticleListPresenter) {}
 
-    func set(articles: [Article]) {}
+    private(set) var articlesSet: [Article]?
+    func set(articles: [Article]) {
+        self.articlesSet = articles
+    }
 
-    func show(error: Error) {}
+    private(set) var errorSet: Error?
+    func show(error: Error) {
+        self.errorSet = error
+    }
 }

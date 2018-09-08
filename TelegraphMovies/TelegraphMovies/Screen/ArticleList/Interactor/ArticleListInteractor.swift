@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ArticleListInteractor {
-    func getArticleList(callback: @escaping (Result<[Article]>) -> Void)
+    func getArticleList(callback: @escaping CallbackResult<[Article]>)
 }

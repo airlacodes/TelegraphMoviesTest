@@ -11,13 +11,13 @@ import Foundation
 final class TelegraphArticleListInteractor: ArticleListInteractor {
 
     private let requestSender: RequestSender
-    private var callback: ((Result<[Article]>) -> Void)?
+    private var callback: CallbackResult<[Article]>?
 
     init(requestSender: RequestSender = TelegraphRequestSender()) {
         self.requestSender = requestSender
     }
 
-    func getArticleList(callback: @escaping (Result<[Article]>) -> Void) {
+    func getArticleList(callback: @escaping CallbackResult<[Article]>) {
         self.callback = callback
 
         requestSender.request(endpoint: .movieReviewArticles,

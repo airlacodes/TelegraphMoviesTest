@@ -18,3 +18,10 @@ enum APIEndpoint {
         }
     }
 }
+
+extension APIEndpoint: Equatable {
+
+    static func ==(lhs: APIEndpoint, rhs: APIEndpoint) -> Bool {
+        return lhs.path == rhs.path
+    }
+}

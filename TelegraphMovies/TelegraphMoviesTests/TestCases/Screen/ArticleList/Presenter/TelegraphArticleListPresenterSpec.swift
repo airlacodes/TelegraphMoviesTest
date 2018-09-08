@@ -13,12 +13,12 @@ import XCTest
 final class TelegraphArticleListPresenterSpec: XCTestCase {
 
     private var testObject: TelegraphArticleListPresenter!
-    private var mockArticleListInteractor: MockArticleListInteractor!
+    private var mockArticleListInteractor: MockockArticleListInteractor!
     private var mockArticleListView: MockArticleListView!
 
     override func setUp() {
         super.setUp()
-        mockArticleListInteractor = MockArticleListInteractor()
+        mockArticleListInteractor = MockockArticleListInteractor()
         mockArticleListView = MockArticleListView()
 
         testObject = TelegraphArticleListPresenter(articleListInteractor: mockArticleListInteractor)
@@ -41,7 +41,25 @@ final class TelegraphArticleListPresenterSpec: XCTestCase {
       * Then: View should be set with expected articles
       */
     func testGetArticleListSucceeds() {
-        XCTFail()
+        testObject.viewAppeared()
+
+        let mockArticleList = [MockArticle().set(headline: "mock").build()]
+        mockArticleListInteractor.triggerGetArticleListResult(.success(mockArticleList))
+
+        XCTAssertEqual("mock", mockArticleListView.articlesSet![0].headline)
     }
-    
+
+    /**
+     * Given: View appears
+     * When: getting article list fails
+     * Then: View should be passed the error
+     */
+    func testGetArticleListFails() {
+        testObject.viewAppeared()
+
+        let error = NSError(domain: "some", code: 12, userInfo: nil)
+        mockArticleListInteractor.triggerGetArticleListResult(.failure(error))
+
+        XCTAssertEqual(error, mockArticleListView.errorSet! as NSError)
+    }
 }

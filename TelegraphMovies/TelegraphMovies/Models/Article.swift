@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Article: Decodable {
+struct Article: CodableModel {
 
     let headline: String
     let description: String
@@ -20,12 +20,28 @@ struct Article: Decodable {
         case pictureUrl = "picture-url"
     }
 
+    public init(headline: String = "",
+                description: String = "",
+                pictureUrl: String = "") {
+        self.headline = headline
+        self.description = description
+        self.pictureUrl = pictureUrl
+    }
+
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
         self.headline = (try? container.decode(String.self, forKey: .headline)) ?? ""
         self.description = (try? container.decode(String.self, forKey: .description)) ?? ""
         self.pictureUrl = (try? container.decode(String.self, forKey: .pictureUrl)) ?? ""
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+
+        try container.encode(headline, forKey: .headline)
+        try container.encode(description, forKey: .description)
+        try container.encode(pictureUrl, forKey: .pictureUrl)
     }
 }
 

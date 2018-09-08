@@ -10,10 +10,16 @@ import Foundation
 
 @testable import TelegraphMovies
 
-final class MockArticleListInteractor: ArticleListInteractor {
+final class MockockArticleListInteractor: ArticleListInteractor {
 
     private(set) var getArticleListCalled = false
+    private var getArticleListCallback: CallbackResult<[Article]>?
     func getArticleList(callback: @escaping (Result<[Article]>) -> Void) {
+        self.getArticleListCallback = callback
         getArticleListCalled = true
+    }
+
+    func triggerGetArticleListResult(_ result: Result<[Article]>) {
+        self.getArticleListCallback?(result)
     }
 }

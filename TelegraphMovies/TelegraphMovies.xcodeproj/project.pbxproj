@@ -19,6 +19,10 @@
 		5C422D102135D62700C93EE9 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C422D0F2135D62700C93EE9 /* UIImageView+Download.swift */; };
 		5C422D132135D74000C93EE9 /* MainFlowSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C422D122135D74000C93EE9 /* MainFlowSpec.swift */; };
 		5C422D152135D7FB00C93EE9 /* MockScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C422D142135D7FB00C93EE9 /* MockScreenFactory.swift */; };
+		5C6949AD2143D4EB000B2034 /* MockArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949AC2143D4EB000B2034 /* MockArticle.swift */; };
+		5C6949B02143DDD4000B2034 /* MockRequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949AF2143DDD4000B2034 /* MockRequestSender.swift */; };
+		5C6949B32143E0DD000B2034 /* MockArticleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949B22143E0DD000B2034 /* MockArticleCollection.swift */; };
+		5C6949B52143E2A6000B2034 /* CodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949B42143E2A6000B2034 /* CodableModel.swift */; };
 		5CD68ABF20D0733000ECE46D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68ABE20D0733000ECE46D /* AppDelegate.swift */; };
 		5CD68AC420D0733000ECE46D /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC220D0733000ECE46D /* ArticleList.storyboard */; };
 		5CD68AC620D0733000ECE46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC520D0733000ECE46D /* Assets.xcassets */; };
@@ -62,6 +66,10 @@
 		5C422D0F2135D62700C93EE9 /* UIImageView+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
 		5C422D122135D74000C93EE9 /* MainFlowSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowSpec.swift; sourceTree = "<group>"; };
 		5C422D142135D7FB00C93EE9 /* MockScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockScreenFactory.swift; sourceTree = "<group>"; };
+		5C6949AC2143D4EB000B2034 /* MockArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticle.swift; sourceTree = "<group>"; };
+		5C6949AF2143DDD4000B2034 /* MockRequestSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestSender.swift; sourceTree = "<group>"; };
+		5C6949B22143E0DD000B2034 /* MockArticleCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticleCollection.swift; sourceTree = "<group>"; };
+		5C6949B42143E2A6000B2034 /* CodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableModel.swift; sourceTree = "<group>"; };
 		5CD68ABB20D0733000ECE46D /* TelegraphMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegraphMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD68ABE20D0733000ECE46D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CD68AC320D0733000ECE46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ArticleList.storyboard; sourceTree = "<group>"; };
@@ -118,6 +126,7 @@
 			children = (
 				5CD68AC520D0733000ECE46D /* Assets.xcassets */,
 				5C08DFC320E7FCC3002203CB /* Data+Decode.swift */,
+				5C6949B42143E2A6000B2034 /* CodableModel.swift */,
 				5C08DFC820E8E41D002203CB /* String+URL.swift */,
 				5C422D0F2135D62700C93EE9 /* UIImageView+Download.swift */,
 				5CD68AE920D0776C00ECE46D /* Result.swift */,
@@ -165,6 +174,23 @@
 			path = Flow;
 			sourceTree = "<group>";
 		};
+		5C6949AE2143DDC2000B2034 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5C6949AF2143DDD4000B2034 /* MockRequestSender.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5C6949B12143E0CB000B2034 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C6949AC2143D4EB000B2034 /* MockArticle.swift */,
+				5C6949B22143E0DD000B2034 /* MockArticleCollection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5CD68AB220D0733000ECE46D = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				5CD68ABE20D0733000ECE46D /* AppDelegate.swift */,
+				5CD68AF620D0830300ECE46D /* Models */,
 				5C08DFCB20E8EA82002203CB /* Flow */,
 				5C08DFCA20E8EA70002203CB /* Screen */,
 				5C08DFC720E8E34C002203CB /* Util */,
@@ -214,7 +241,6 @@
 				5C08DFBD20E7F52F002203CB /* APIEndpoint.swift */,
 				5C08DFC120E7FC5B002203CB /* APIError.swift */,
 				5C08DFBA20E7F4F4002203CB /* RequestSender */,
-				5CD68AF620D0830300ECE46D /* Model */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -258,20 +284,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		5CD68AF620D0830300ECE46D /* Model */ = {
+		5CD68AF620D0830300ECE46D /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				5CD68AE520D0752300ECE46D /* Article.swift */,
 				5C08DFC520E7FE1E002203CB /* ArticleCollection.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5CD68AFD20D0842900ECE46D /* MockClasses */ = {
 			isa = PBXGroup;
 			children = (
+				5C6949AE2143DDC2000B2034 /* Networking */,
 				5C08DFCD20E8EAEB002203CB /* Screen */,
 				5C422D142135D7FB00C93EE9 /* MockScreenFactory.swift */,
+				5C6949B12143E0CB000B2034 /* Models */,
 			);
 			path = MockClasses;
 			sourceTree = "<group>";
@@ -468,6 +496,7 @@
 				5C08DFC220E7FC5B002203CB /* APIError.swift in Sources */,
 				5C08DFC020E7F73B002203CB /* TelegraphRequestSender.swift in Sources */,
 				5CD68AEF20D0829F00ECE46D /* ArticleCollectionViewCell.swift in Sources */,
+				5C6949B52143E2A6000B2034 /* CodableModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,10 +506,13 @@
 			files = (
 				5CD68B0520D084BD00ECE46D /* TelegraphArticleListPresenterSpec.swift in Sources */,
 				5C422D152135D7FB00C93EE9 /* MockScreenFactory.swift in Sources */,
+				5C6949AD2143D4EB000B2034 /* MockArticle.swift in Sources */,
 				5C422D132135D74000C93EE9 /* MainFlowSpec.swift in Sources */,
 				5CD68B0D20D088CA00ECE46D /* MockArticleListView.swift in Sources */,
 				5CD68B0F20D088D800ECE46D /* MockArticleListInteractor.swift in Sources */,
+				5C6949B32143E0DD000B2034 /* MockArticleCollection.swift in Sources */,
 				5CD68B0B20D0882600ECE46D /* MockArticleListPresenter.swift in Sources */,
+				5C6949B02143DDD4000B2034 /* MockRequestSender.swift in Sources */,
 				5CD68B0020D0845200ECE46D /* TelegraphArticleListInteractorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
