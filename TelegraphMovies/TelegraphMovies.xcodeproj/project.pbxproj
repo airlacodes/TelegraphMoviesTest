@@ -23,6 +23,9 @@
 		5C6949B02143DDD4000B2034 /* MockRequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949AF2143DDD4000B2034 /* MockRequestSender.swift */; };
 		5C6949B32143E0DD000B2034 /* MockArticleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949B22143E0DD000B2034 /* MockArticleCollection.swift */; };
 		5C6949B52143E2A6000B2034 /* CodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949B42143E2A6000B2034 /* CodableModel.swift */; };
+		5C6949B821440ECE000B2034 /* TelegraphRequestSenderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949B721440ECE000B2034 /* TelegraphRequestSenderSpec.swift */; };
+		5C6949BB21441537000B2034 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949BA21441537000B2034 /* MockURLSessionDataTask.swift */; };
+		5C6949BD21441545000B2034 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949BC21441545000B2034 /* MockURLSession.swift */; };
 		5CD68ABF20D0733000ECE46D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68ABE20D0733000ECE46D /* AppDelegate.swift */; };
 		5CD68AC420D0733000ECE46D /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC220D0733000ECE46D /* ArticleList.storyboard */; };
 		5CD68AC620D0733000ECE46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC520D0733000ECE46D /* Assets.xcassets */; };
@@ -70,6 +73,9 @@
 		5C6949AF2143DDD4000B2034 /* MockRequestSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestSender.swift; sourceTree = "<group>"; };
 		5C6949B22143E0DD000B2034 /* MockArticleCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticleCollection.swift; sourceTree = "<group>"; };
 		5C6949B42143E2A6000B2034 /* CodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableModel.swift; sourceTree = "<group>"; };
+		5C6949B721440ECE000B2034 /* TelegraphRequestSenderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphRequestSenderSpec.swift; sourceTree = "<group>"; };
+		5C6949BA21441537000B2034 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		5C6949BC21441545000B2034 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		5CD68ABB20D0733000ECE46D /* TelegraphMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegraphMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD68ABE20D0733000ECE46D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CD68AC320D0733000ECE46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ArticleList.storyboard; sourceTree = "<group>"; };
@@ -177,6 +183,7 @@
 		5C6949AE2143DDC2000B2034 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				5C6949B92144152A000B2034 /* MockURLSession */,
 				5C6949AF2143DDD4000B2034 /* MockRequestSender.swift */,
 			);
 			path = Networking;
@@ -189,6 +196,23 @@
 				5C6949B22143E0DD000B2034 /* MockArticleCollection.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5C6949B621440EBB000B2034 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5C6949B721440ECE000B2034 /* TelegraphRequestSenderSpec.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5C6949B92144152A000B2034 /* MockURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				5C6949BA21441537000B2034 /* MockURLSessionDataTask.swift */,
+				5C6949BC21441545000B2034 /* MockURLSession.swift */,
+			);
+			path = MockURLSession;
 			sourceTree = "<group>";
 		};
 		5CD68AB220D0733000ECE46D = {
@@ -307,6 +331,7 @@
 		5CD68AFE20D0843400ECE46D /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
+				5C6949B621440EBB000B2034 /* Networking */,
 				5C422D112135D73100C93EE9 /* Flow */,
 				5C08DFCC20E8EADE002203CB /* Screen */,
 			);
@@ -507,13 +532,16 @@
 				5CD68B0520D084BD00ECE46D /* TelegraphArticleListPresenterSpec.swift in Sources */,
 				5C422D152135D7FB00C93EE9 /* MockScreenFactory.swift in Sources */,
 				5C6949AD2143D4EB000B2034 /* MockArticle.swift in Sources */,
+				5C6949B821440ECE000B2034 /* TelegraphRequestSenderSpec.swift in Sources */,
 				5C422D132135D74000C93EE9 /* MainFlowSpec.swift in Sources */,
 				5CD68B0D20D088CA00ECE46D /* MockArticleListView.swift in Sources */,
 				5CD68B0F20D088D800ECE46D /* MockArticleListInteractor.swift in Sources */,
 				5C6949B32143E0DD000B2034 /* MockArticleCollection.swift in Sources */,
 				5CD68B0B20D0882600ECE46D /* MockArticleListPresenter.swift in Sources */,
+				5C6949BB21441537000B2034 /* MockURLSessionDataTask.swift in Sources */,
 				5C6949B02143DDD4000B2034 /* MockRequestSender.swift in Sources */,
 				5CD68B0020D0845200ECE46D /* TelegraphArticleListInteractorSpec.swift in Sources */,
+				5C6949BD21441545000B2034 /* MockURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

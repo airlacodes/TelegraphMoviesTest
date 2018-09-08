@@ -12,11 +12,12 @@ import Foundation
 final class MockRequestSender: RequestSender {
 
     private(set) var endpointSet: APIEndpoint?
+    private(set) var requestCalled = false
     private var callbackSet: CallbackResult<Data>?
-
     func request(endpoint: APIEndpoint, callback: @escaping CallbackResult<Data>) {
         self.endpointSet = endpoint
         self.callbackSet = callback
+        requestCalled = true
     }
 
     func triggerRequstResult(_ result: Result<Data>) {
