@@ -26,6 +26,7 @@
 		5C6949B821440ECE000B2034 /* TelegraphRequestSenderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949B721440ECE000B2034 /* TelegraphRequestSenderSpec.swift */; };
 		5C6949BB21441537000B2034 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949BA21441537000B2034 /* MockURLSessionDataTask.swift */; };
 		5C6949BD21441545000B2034 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949BC21441545000B2034 /* MockURLSession.swift */; };
+		5C6949C021441829000B2034 /* TelegraphScreenFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6949BF21441829000B2034 /* TelegraphScreenFactorySpec.swift */; };
 		5CD68ABF20D0733000ECE46D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD68ABE20D0733000ECE46D /* AppDelegate.swift */; };
 		5CD68AC420D0733000ECE46D /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC220D0733000ECE46D /* ArticleList.storyboard */; };
 		5CD68AC620D0733000ECE46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD68AC520D0733000ECE46D /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		5C6949B721440ECE000B2034 /* TelegraphRequestSenderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphRequestSenderSpec.swift; sourceTree = "<group>"; };
 		5C6949BA21441537000B2034 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
 		5C6949BC21441545000B2034 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		5C6949BF21441829000B2034 /* TelegraphScreenFactorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphScreenFactorySpec.swift; sourceTree = "<group>"; };
 		5CD68ABB20D0733000ECE46D /* TelegraphMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegraphMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD68ABE20D0733000ECE46D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CD68AC320D0733000ECE46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ArticleList.storyboard; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 				5C6949B621440EBB000B2034 /* Networking */,
 				5C422D112135D73100C93EE9 /* Flow */,
 				5C08DFCC20E8EADE002203CB /* Screen */,
+				5C6949BF21441829000B2034 /* TelegraphScreenFactorySpec.swift */,
 			);
 			path = TestCases;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				5C422D132135D74000C93EE9 /* MainFlowSpec.swift in Sources */,
 				5CD68B0D20D088CA00ECE46D /* MockArticleListView.swift in Sources */,
 				5CD68B0F20D088D800ECE46D /* MockArticleListInteractor.swift in Sources */,
+				5C6949C021441829000B2034 /* TelegraphScreenFactorySpec.swift in Sources */,
 				5C6949B32143E0DD000B2034 /* MockArticleCollection.swift in Sources */,
 				5CD68B0B20D0882600ECE46D /* MockArticleListPresenter.swift in Sources */,
 				5C6949BB21441537000B2034 /* MockURLSessionDataTask.swift in Sources */,
