@@ -9,10 +9,10 @@
 import Foundation
 
 final class MockURLSessionDataTask: URLSessionDataTask {
+
     private let dataSet: Data?
     private let urlResponseSet: URLResponse?
     private let errorSet: Error?
-
     var completionHandler: ((Data?, URLResponse?, Error?) -> Void)?
 
     init(data: Data?, urlResponse: URLResponse?, error: Error?) {
@@ -20,6 +20,7 @@ final class MockURLSessionDataTask: URLSessionDataTask {
         self.urlResponseSet = urlResponse
         self.errorSet = error
     }
+    
     override func resume() {
         DispatchQueue.main.async {
             self.completionHandler?(self.dataSet, self.urlResponseSet, self.errorSet)
